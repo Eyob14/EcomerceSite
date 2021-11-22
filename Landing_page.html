@@ -5,22 +5,53 @@
         <title>Product page</title>
     </head>
     <style>
-        nav {
-            text-align:right;
-        }
-        nav li {
-            list-style-type: none;
-            float: Left;
-            padding: 14px;
-        }
+     body {
+	background-color: bisque;
+	font-family: sans-serif;
+	word-spacing: .3em;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
     </style>
     <body>
-        <nav>
-            <input type="search" placeholder="search">
-            <ul>
-                <li><a href="Landing_page.html">Home</a></li>
-                <li><a href="product_list_page.html">Product</a></li>
-            </ul><br><br>
-        </nav>
+        <div class="topnav">
+            <a class="active" href="Landing_page.html">Home</a>
+            <a href="product_list_page.html">Product</a>
+            <a href="customer_list_page.html">Customer</a>
+            <a href="#contact"></a>
+            <div class="topnav-right">
+              <input type="search" placeholder="search">
+            </div>
+          </div>
     </body>
 </html>
