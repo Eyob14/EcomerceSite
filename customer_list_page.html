@@ -4,8 +4,6 @@
         <meta charset="UTF-8" content>
         <title>Customer list</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     </head>
     <style>
 main h1{
@@ -80,17 +78,23 @@ input:hover{
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 30%;
-  background-color: black;
-  color: white;
-
-}
-
-
+        position:absolute; 
+        bottom:0px; 
+        height: 40px; 
+        left:0px; 
+        right:0px; 
+        overflow:hidden;
+        background-color: #333;;
+        color: white;
+    }
+main {
+        position:absolute; 
+        top:60px; 
+        bottom:200px; 
+        left:0px; 
+        right:0px; 
+        overflow:auto;
+    }
     </style>
     <body>
         <div class="topnav">
@@ -143,14 +147,6 @@ footer {
             </table>
         </main>
         <footer>
-          <div id="bottomright">
-            
-            <p>Contact us: </p>
-            <label>Email: </label>
-            <input type="email" placeholder="email"><br>
-            <label>Message: </label>
-            <textarea rows="5" cols="30" placeholder="message" ></textarea>
-          </div>
           <p style="text-align: center;">E-max &copy; 2018</p>
         </footer>
     </body>
