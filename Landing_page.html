@@ -27,10 +27,16 @@ body {
         
       }
     /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
+    .topnav {
+        background-color: #333;
+        position:absolute;
+        top:0px; 
+        left:0px; 
+        height:60px; 
+        right:0px;
+        overflow:hidden;
+    }
+    
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -75,15 +81,23 @@ input:hover{
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 30%;
-  background-color: black;
-  color: white;
-
-}
+        position:absolute; 
+        bottom:0px; 
+        height:200px; 
+        left:0px; 
+        right:0px; 
+        overflow:hidden;
+        background-color: #333;;
+        color: white;
+    }
+main {
+        position:absolute; 
+        top:60px; 
+        bottom:200px; 
+        left:0px; 
+        right:0px; 
+        overflow:auto;
+    }
 
 
     </style>
@@ -98,16 +112,16 @@ footer {
         </div>
         <main>
           
-          <h1>welcome to E-max ecomerce site</h1>
-          <P>Here we have brand new broducts with greate discount. Please procede to our product page to find your desire products</P>
+          <h1>welcome to E-max E-commerce site</h1>
+          <P>Here we have brand new products with great discount. Please proceed to our product page to find your desire products</P>
           <p>To tell you little more about our site, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
              Modi porro provident ut voluptates aliquam, odit commodi facilis, laboriosam nam,
              dignissimos autem nesciunt enim hic deserunt. Distinctio itaque omnis odio voluptatum.</p>
              <fieldset >
                <legend>Login</legend>
                <form>
-                 <P><lable> Email: <input type="email" name="email"> </lable></P>
-                 <P><lable>Password: <input type="password" name="password"></lable></P>
+                 <P><label> Email: <input type="email" name="email"> </label></P>
+                 <P><label>Password: <input type="password" name="password"></label></P>
                  <input type="submit" value="LOGIN">
                  <a href="#">Register</a>
                </form>
@@ -115,7 +129,6 @@ footer {
         </main>
         <footer>
           <div id="bottomright">
-            
             <p>Contact us: </p>
             <label>Email: </label>
             <input type="email" placeholder="email"><br>
