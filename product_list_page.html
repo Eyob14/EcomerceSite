@@ -1,33 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" content>
         <title>Product page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <style>
+          body {
+            background-color: whitesmoke;
+          }
+        /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        position:absolute;
+        top:0px; 
+        left:0px; 
+        height:60px; 
+        right:0px;
+        overflow:hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    /* Right-aligned section inside the top navigation */
+    .topnav-right {
+      float: right;
+    }
+    
+    footer {
+        position:absolute; 
+        bottom:0px; 
+        height:200px; 
+        left:0px; 
+        right:0px; 
+        overflow:hidden;
+        background-color: #333;;
+        color: white;
+    }
+    li {
+        list-style-type: none;
+    }
+    .figure figure {
+        float: left;
+    }
+    main {
+        position:absolute; 
+        top:60px; 
+        bottom:200px; 
+        left:0px; 
+        right:0px; 
+        overflow:auto;
+    }
+        </style>
     </head>
-    <style>
-        nav {
-            text-align:right;
-        }
-        nav li {
-            list-style-type: none;
-            float: Left;
-            padding: 14px;
-        }
-    </style>
     <body>
-        <nav>
-            <input type="search" placeholder="search">
-            <ul>
-                <li><a href="Landing_page.html">Home</a></li>
-                <li><a href="product_list_page.html">Product</a></li>
-            </ul><br><br>
-        </nav>
-        <h1>This are the products we have for the user to choose from: </h1>
-        <ul>
-            <li>Tvs</li>
-            <li>Smart Phones</li>
-            <li>Laptop computers</li>
-            <li>desktop computers</li>
-        </ul>
+        <div class="topnav">
+            <a class="active" href="Landing_page">Home</a>
+            <a href="product_list_page.html">Product</a>
+            <a href="customer_list_page.html">Customer</a>
+            <div class="topnav-right">
+              <input type="search" placeholder="search">
+            </div>
+        </div>
+        <main>
+             <h1 style="text-align: center;">Products list</h1>
+             <div class="figure">
+             <figure>
+                 <img src="phone.jpg" alt="product image">
+                 <figcaption>
+                     <ul>
+                         <li>Name: Nokia 5</li>
+                         <li>Storage: 32gb</li>
+                         <li>Ram: 4gb</li>
+                     </ul>
+                 </figcaption>
+             </figure>
+             <figure>
+                <img src="camera.jpg" alt="product image">
+                <figcaption>
+                    <ul>
+                        <li>Name: Nokia 5</li>
+                        <li>Storage: 32gb</li>
+                        <li>Ram: 4gb</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="camera.jpg" alt="product image">
+                <figcaption>
+                    <ul>
+                        <li>Name: Nokia 5</li>
+                        <li>Storage: 32gb</li>
+                        <li>Ram: 4gb</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="camera.jpg" alt="product image">
+                <figcaption>
+                    <ul>
+                        <li>Name: Nokia 5</li>
+                        <li>Storage: 32gb</li>
+                        <li>Ram: 4gb</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="camera.jpg" alt="product image">
+                <figcaption>
+                    <ul>
+                        <li>Name: Nokia 5</li>
+                        <li>Storage: 32gb</li>
+                        <li>Ram: 4gb</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="camera.jpg" alt="product image">
+                <figcaption>
+                    <ul>
+                        <li>Name: Nokia 5</li>
+                        <li>Storage: 32gb</li>
+                        <li>Ram: 4gb</li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+        </main>
+        <br>
+        <footer>
+          <div id="bottomright">
+            <p>Contact us: </p>
+            <label>Email: </label>
+            <input type="email" placeholder="email"><br>
+            <label>Message: </label>
+            <textarea rows="5" cols="30" placeholder="message" ></textarea><br><br>
+            <input type="submit">
+          </div>
+          <p style="text-align: center;">E-max &copy; 2018</p>
+        </footer>
     </body>
 </html>
