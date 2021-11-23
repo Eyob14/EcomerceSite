@@ -30,10 +30,16 @@ main {
 }
 
     /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
+    .topnav {
+        background-color: #333;
+        position:absolute;
+        top:0px; 
+        left:0px; 
+        height:60px; 
+        right:0px;
+        overflow:hidden;
+    }
+    
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -98,9 +104,9 @@ main {
     </style>
     <body>
         <div class="topnav">
-            <a  href="Landing_page">Home</a>
+            <a class="active" href="Landing_page.html">Home</a>
             <a href="product_list_page.html">Product</a>
-            <a class="active" href="customer_list_page.html">Customer</a>
+            <a  href="customer_list_page.html">Customer</a>
             <div class="topnav-right">
               <input type="search" placeholder="search">
             </div>
