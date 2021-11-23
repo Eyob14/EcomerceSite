@@ -8,8 +8,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     </head>
     <style>
-      body {
+main h1{
+  text-align: center;
+}  
+body {
+  /* background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url("images/ma.jpg");  */
+        margin-right: auto;
+        margin-left:auto;
+        /* width: 800px; */
+        background-image: url("images/ma.jpg");
         background-color: whitesmoke;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        color:#f2f2f2;
+
+
+        
       }
     /* Add a black background color to the top navigation */
 .topnav {
@@ -43,6 +58,21 @@
 .topnav-right {
   float: right;
 }
+fieldset{
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+a{
+  color:#04AA6D;
+  float:right;
+}
+a:hover{
+  color:aqua;
+}
+input:hover{
+  color:aquamarine;
+}
 
 footer {
   position: fixed;
@@ -56,7 +86,6 @@ footer {
 }
 
 
-
     </style>
     <body>
         <div class="topnav">
@@ -67,6 +96,23 @@ footer {
               <input type="search" placeholder="search">
             </div>
         </div>
+        <main>
+          
+          <h1>welcome to E-max ecomerce site</h1>
+          <P>Here we have brand new broducts with greate discount. Please procede to our product page to find your desire products</P>
+          <p>To tell you little more about our site, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Modi porro provident ut voluptates aliquam, odit commodi facilis, laboriosam nam,
+             dignissimos autem nesciunt enim hic deserunt. Distinctio itaque omnis odio voluptatum.</p>
+             <fieldset >
+               <legend>Login</legend>
+               <form>
+                 <P><lable> Email: <input type="email" name="email"> </lable></P>
+                 <P><lable>Password: <input type="password" name="password"></lable></P>
+                 <input type="submit" value="LOGIN">
+                 <a href="#">Register</a>
+               </form>
+             </fieldset>
+        </main>
         <footer>
           <div id="bottomright">
             
